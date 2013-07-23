@@ -391,6 +391,35 @@ HOMEPAGE STYLES
 }
 
 /*********************
+No-Post page Styles
+*********************/
+.pageImage
+{
+  float: right;
+  opacity: .3;
+  margin-left: 40px;
+}
+
+#pageContent
+{
+  margin: 40px;
+
+  .pageHeading
+  {
+    font-size: 3em;
+    font-weight: bold;
+    font-style: italic;
+    color: $main-title;
+  }
+
+  .pageText p
+  {
+    font-size: 1.1em;
+    margin-right: 20px;
+  }
+}
+
+/*********************
 Pagination Styles
 *********************/
 

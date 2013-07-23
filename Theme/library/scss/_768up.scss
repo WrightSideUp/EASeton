@@ -265,19 +265,18 @@ FOOTER STYLES
   background-color: $story-back;
 }
 
-.footer-nav {
+
+%navId .footer-nav {
   margin: 0;
-  background-color: $footer-back;
 
   li {
     float: left;
-    margin: 10px 60px 0 60px;
+    margin: 10px 40px 0 60px;
 
     a {
       font-size: 1.1em;
       font-weight: bold;
       text-decoration: none;
-      color: $footer-text;
       margin-bottom: 5px;
 
       &:hover {
@@ -298,6 +297,28 @@ FOOTER STYLES
           font-size: .9em;
         }
       }
+    }
+  }
+}
+
+#homeNav  {
+  @extend %navId;
+  background-color: $footer-back;
+
+  li {
+    a {
+      color: $footer-text;
+    }
+  }
+}
+
+#pageNav  {
+  @extend %navId;
+  border-top: 2px solid $main-title;
+
+  li {
+    a {
+      color: $story-text;
     }
   }
 }

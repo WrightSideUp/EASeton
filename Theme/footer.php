@@ -2,7 +2,11 @@
 
 				<div id="inner-footer" class="wrap clearfix">
 
-					<nav role="navigation">
+                        <?php if ( is_front_page() ) : ?>
+                            <nav id="homeNav" role="navigation" >
+                        <?php else : ?>
+                            <nav id="pageNav" role="navigation" >
+                        <?php endif; ?>
 
                         <?php bones_footer_links(); ?>
 

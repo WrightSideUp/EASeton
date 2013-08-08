@@ -30,7 +30,6 @@ require_once('library/bones.php'); // if you remove this, bones will break
 	- example custom taxonomy (like categories)
 	- example custom taxonomy (like tags)
 */
-require_once('library/get-help-post-type.php'); // you can disable this if you like
 /*
 3. library/admin.php
 	- removing some default WordPress dashboard widgets
@@ -189,6 +188,26 @@ function get_first_image() {
 
     return $first_img;
 }
+
+/**
+ * Hooks the WP cpt_post_types filter
+ *
+ * @param array $post_types An array of post type names that the templates be used by
+ * @return array The array of post type names that the templates be used by
+ **/
+function my_cpt_post_types( $post_types ) {
+    $post_types[] = 'GetHelp';
+    return $post_types;
+}
+
+add_filter( 'cpt_post_types', 'my_cpt_post_types' );
+
+/*************** Add Excerpts to Pages ***************/
+function my_add_excerpts_to_pages() {
+     add_post_type_support( 'page', 'excerpt' );
+}
+
+add_action( 'init', 'my_add_excerpts_to_pages' );
 
 ?>
 

@@ -259,6 +259,30 @@ HOMEPAGE STYLES
   background: $story-back;
 }
 
+#main {
+  margin: 0 30px 0 30px;
+  font-size: 1.1em;
+
+  h1, h2, h3, h4  {
+    color: $main-title;
+    font-weight: bold;
+    margin: 30px 0 5px 0;
+  }
+
+  p { margin: 0; }
+
+  a {
+    display: block;
+    color: $action-link;
+    text-decoration: none;
+    margin-top: 15px;
+
+    &:hover {
+      color: $action-link-hover;
+    }
+  }
+}
+
 #story img  {
   float: left;
   width: 610px;
@@ -402,20 +426,96 @@ No-Post page Styles
 
 #pageContent
 {
-  margin: 40px;
-
   .pageHeading
   {
     font-size: 3em;
     font-weight: bold;
     font-style: italic;
     color: $main-title;
+    margin-left: 30px;
   }
 
-  .pageText p
+  .pageText
   {
+    margin: 0 30px 0 30px;
     font-size: 1.1em;
-    margin-right: 20px;
+
+    h2, h3, h4  {
+      color: $main-title;
+      font-weight: bold;
+      margin: 30px 0 5px 0;
+    }
+
+    p { margin: 0; }
+
+    a {
+      display: block;
+      color: $action-link;
+      text-decoration: none;
+      margin-top: 15px;
+
+      &:hover {
+        color: $action-link-hover;
+      }
+    }
+  }
+}
+
+#subPages {
+  overflow: hidden;
+  clear: both;
+  margin: 60px 0 60px 0;
+
+  .subPageHeading {
+    font-weight: bold;
+    font-size: 1.8em;
+    margin: 0 0 10px 0;
+    color: $main-title;
+  }
+
+  .actionSection {
+    padding: 20px;
+
+    a  {
+      display: block;
+      color: $action-link;
+      text-decoration: none;
+      margin-top: 10px;
+
+      &:hover {
+        color: $action-link-hover;
+      }
+    }
+  }
+
+  .withborder {
+    border-left: 1px solid $main-title;
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
+.staffGallery {
+
+  table {
+    background-color: $table-back;
+    width: 800px;
+    margin: 0 auto;
+  }
+
+  .staffPic {
+    width: 175px;
+    text-align: center;
+  }
+
+  td {
+    padding: 15px 0;
+  }
+
+  img {
+    border: 1px solid $table-text;
   }
 }
 
@@ -951,7 +1051,7 @@ COMMENT FORM STYLES
 		textarea {
 			resize: none;
 			width: 97.3%;
-			height: 150px;
+			height: 75px;
 		}
 
 	}

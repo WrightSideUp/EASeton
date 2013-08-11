@@ -426,7 +426,13 @@ No-Post page Styles
 
 #pageContent
 {
-  .pageHeading
+  padding: 20px;
+  border-top: 5px solid $main-title;
+  border-bottom: 3px solid $main-title;
+  background-color: $white;
+  color: $black;
+
+  h1
   {
     font-size: 3em;
     font-weight: bold;
@@ -455,7 +461,7 @@ No-Post page Styles
       margin-top: 15px;
 
       &:hover {
-        color: $action-link-hover;
+        text-decoration: underline;
       }
     }
   }
@@ -500,7 +506,7 @@ No-Post page Styles
 .staffGallery {
 
   table {
-    background-color: $table-back;
+    background-color: $gallery-back;
     width: 800px;
     margin: 0 auto;
   }

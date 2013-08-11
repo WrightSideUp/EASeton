@@ -10,13 +10,13 @@ Template Name: Landing Page
 
         <div id="inner-content" class="wrap clearfix">
 
-        <?php if (have_posts()) : ?><?php while (have_posts()) : the_post(); ?>
-
         <?php if ( has_post_thumbnail()) : ?>
             <div class="pageImage">
                 <?php the_post_thumbnail('full'); ?>
             </div>
          <?php endif; ?>
+
+        <?php if (have_posts()) : ?><?php while (have_posts()) : the_post(); ?>
 
             <div id="pageContent">
 

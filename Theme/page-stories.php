@@ -11,52 +11,47 @@ Template Name: Stories Page
 
 				<div id="inner-content" class="wrap clearfix">
 
-						<div id="main" class="eightcol first clearfix" role="main">
+						<div id="pageContent">
 
-							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+                            <h1>Our Stories</h1>
 
-							<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
+                            <div class="pageText">
 
-								<header class="article-header">
+                                <?php
+                                $args = array ( 'category' => 6);
+                                $myposts = get_posts( $args );
+                                foreach( $myposts as $post ) :	setup_postdata($post);
+                                 ?>
 
-									<h1 class="page-title" itemprop="headline"><?php the_title(); ?></h1>
-									<p class="byline vcard"><?php
-										printf(__('Posted <time class="updated" datetime="%1$s" pubdate>%2$s</time> by <span class="author">%3$s</span>.', 'bonestheme'), get_the_time('Y-m-j'), get_the_time(__('F jS, Y', 'bonestheme')), bones_get_the_author_posts_link());
-									?></p>
+                                <article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
 
+                                    <header class="article-header">
 
-								</header> <!-- end article header -->
+                                        <h2 class="page-title" itemprop="headline"><?php the_title(); ?></h2>
 
-								<section class="entry-content clearfix" itemprop="articleBody">
-									<?php the_content(); ?>
-							</section> <!-- end article section -->
+                                    </header> <!-- end article header -->
 
-								<footer class="article-footer">
-									<?php the_tags('<span class="tags">' . __('Tags:', 'bonestheme') . '</span> ', ', ', ''); ?>
+                                    <section class="entry-content clearfix" itemprop="articleBody">
+                                        <?php the_excerpt(); ?>
+                                </section> <!-- end article section -->
 
-								</footer> <!-- end article footer -->
+                                    <footer class="article-footer">
 
-								<?php comments_template(); ?>
+                                        <p class="byline vcard"><?php
+                                            printf(__('Posted <time class="updated" datetime="%1$s" pubdate>%2$s</time>', 'bonestheme'), get_the_time('Y-m-j'), get_the_time(__('F jS, Y', 'bonestheme')));
+                                        ?></p>
 
-							</article> <!-- end article -->
+                                        <?php the_tags('<span class="tags">' . __('Tags:', 'bonestheme') . '</span> ', ', ', ''); ?>
 
-							<?php endwhile; else : ?>
+                                    </footer> <!-- end article footer -->
 
-									<article id="post-not-found" class="hentry clearfix">
-										<header class="article-header">
-											<h1><?php _e("Oops, Post Not Found!", "bonestheme"); ?></h1>
-										</header>
-										<section class="entry-content">
-											<p><?php _e("Uh Oh. Something is missing. Try double checking things.", "bonestheme"); ?></p>
-										</section>
-										<footer class="article-footer">
-												<p><?php _e("This is the error message in the page.php template.", "bonestheme"); ?></p>
-										</footer>
-									</article>
+                                </article> <!-- end article -->
 
-							<?php endif; ?>
+                                <?php endforeach ?>
 
-						</div> <!-- end #main -->
+    						</div> <!-- end #pageText -->
+
+						</div> <!-- end #pageContent -->
 
 				</div> <!-- end #inner-content -->
 

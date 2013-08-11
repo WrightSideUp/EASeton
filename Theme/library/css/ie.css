@@ -36,16 +36,16 @@ remember less is more.
 /*********************
 CLEARFIXIN'
 *********************/
-/* line 23, C:/Projects/EASeton/Theme/library/scss/_mixins.scss */
+/* line 23, c:/Projects/EASeton/Theme/library/scss/_mixins.scss */
 .clearfix {
   zoom: 1;
 }
-/* line 25, C:/Projects/EASeton/Theme/library/scss/_mixins.scss */
+/* line 25, c:/Projects/EASeton/Theme/library/scss/_mixins.scss */
 .clearfix:before, .clearfix:after {
   content: "";
   display: table;
 }
-/* line 26, C:/Projects/EASeton/Theme/library/scss/_mixins.scss */
+/* line 26, c:/Projects/EASeton/Theme/library/scss/_mixins.scss */
 .clearfix:after {
   clear: both;
 }
@@ -53,14 +53,14 @@ CLEARFIXIN'
 /*********************
 TOOLS
 *********************/
-/* line 34, C:/Projects/EASeton/Theme/library/scss/_mixins.scss */
+/* line 34, c:/Projects/EASeton/Theme/library/scss/_mixins.scss */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 41, C:/Projects/EASeton/Theme/library/scss/_mixins.scss */
+/* line 41, c:/Projects/EASeton/Theme/library/scss/_mixins.scss */
 .image-replacement {
   text-indent: 100%;
   white-space: nowrap;
@@ -84,53 +84,53 @@ TYPOGRAPHY
 use the best ampersand
 http://simplebits.com/notebook/2008/08/14/ampersands-2/
 */
-/* line 113, C:/Projects/EASeton/Theme/library/scss/_mixins.scss */
+/* line 115, c:/Projects/EASeton/Theme/library/scss/_mixins.scss */
 span.amp {
   font-family: Baskerville,'Goudy Old Style',Palatino,'Book Antiqua',serif !important;
   font-style: italic;
 }
 
-/* line 119, C:/Projects/EASeton/Theme/library/scss/_mixins.scss */
+/* line 121, c:/Projects/EASeton/Theme/library/scss/_mixins.scss */
 .text-left {
   text-align: left;
 }
 
-/* line 120, C:/Projects/EASeton/Theme/library/scss/_mixins.scss */
+/* line 122, c:/Projects/EASeton/Theme/library/scss/_mixins.scss */
 .text-center {
   text-align: center;
 }
 
-/* line 121, C:/Projects/EASeton/Theme/library/scss/_mixins.scss */
+/* line 123, c:/Projects/EASeton/Theme/library/scss/_mixins.scss */
 .text-right {
   text-align: right;
 }
 
-/* line 125, C:/Projects/EASeton/Theme/library/scss/_mixins.scss */
+/* line 127, c:/Projects/EASeton/Theme/library/scss/_mixins.scss */
 .alert-help, .alert-info, .alert-error, .alert-success {
   margin: 10px;
   padding: 5px 18px;
   border: 1px solid;
 }
 
-/* line 131, C:/Projects/EASeton/Theme/library/scss/_mixins.scss */
+/* line 133, c:/Projects/EASeton/Theme/library/scss/_mixins.scss */
 .alert-help {
   border-color: #e8dc59;
   background: #ebe16f;
 }
 
-/* line 137, C:/Projects/EASeton/Theme/library/scss/_mixins.scss */
+/* line 139, c:/Projects/EASeton/Theme/library/scss/_mixins.scss */
 .alert-info {
   border-color: #bfe4f4;
   background: #d5edf8;
 }
 
-/* line 143, C:/Projects/EASeton/Theme/library/scss/_mixins.scss */
+/* line 145, c:/Projects/EASeton/Theme/library/scss/_mixins.scss */
 .alert-error {
   border-color: #f8cdce;
   background: #fbe3e4;
 }
 
-/* line 149, C:/Projects/EASeton/Theme/library/scss/_mixins.scss */
+/* line 151, c:/Projects/EASeton/Theme/library/scss/_mixins.scss */
 .alert-success {
   border-color: #deeaae;
   background: #e6efc2;
@@ -160,14 +160,14 @@ probably best not to use it. I mean, were you going to anyway? */
 /*********************
 BUTTONS
 *********************/
-/* line 211, C:/Projects/EASeton/Theme/library/scss/_mixins.scss */
+/* line 213, c:/Projects/EASeton/Theme/library/scss/_mixins.scss */
 .button, .button:visited {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   border: 1px solid #391a4a;
   border-top-color: #4b2261;
   border-left-color: #4b2261;
   padding: 4px 12px;
-  color: white;
+  color: ivory;
   display: inline-block;
   font-size: 11px;
   font-weight: bold;
@@ -184,9 +184,9 @@ BUTTONS
   background-image: -o-linear-gradient(top, #5f2b7b, #502468);
   background-image: linear-gradient(to bottom, #5f2b7b, #502468);
 }
-/* line 230, C:/Projects/EASeton/Theme/library/scss/_mixins.scss */
+/* line 232, c:/Projects/EASeton/Theme/library/scss/_mixins.scss */
 .button:hover, .button:focus, .button:visited:hover, .button:visited:focus {
-  color: white;
+  color: ivory;
   border: 1px solid #391a4a;
   border-top-color: #25112f;
   border-left-color: #25112f;
@@ -197,7 +197,7 @@ BUTTONS
   background-image: -o-linear-gradient(top, #502468, #421e55);
   background-image: linear-gradient(to bottom, #502468, #421e55);
 }
-/* line 238, C:/Projects/EASeton/Theme/library/scss/_mixins.scss */
+/* line 240, c:/Projects/EASeton/Theme/library/scss/_mixins.scss */
 .button:active, .button:visited:active {
   background-color: #5f2b7b;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#502468), to(#5f2b7b));
@@ -207,7 +207,7 @@ BUTTONS
   background-image: linear-gradient(to bottom, #502468, #5f2b7b);
 }
 
-/* line 243, C:/Projects/EASeton/Theme/library/scss/_mixins.scss */
+/* line 245, c:/Projects/EASeton/Theme/library/scss/_mixins.scss */
 .blue-button, .blue-button:visited {
   border-color: #1472ad;
   text-shadow: 0 1px 1px #1472ad;
@@ -219,7 +219,7 @@ BUTTONS
   background-image: linear-gradient(to bottom, #1990db, #1681c4);
   box-shadow: inset 0 0 3px #59b3ec;
 }
-/* line 249, C:/Projects/EASeton/Theme/library/scss/_mixins.scss */
+/* line 251, c:/Projects/EASeton/Theme/library/scss/_mixins.scss */
 .blue-button:hover, .blue-button:focus, .blue-button:visited:hover, .blue-button:visited:focus {
   border-color: #116396;
   background-color: #1472ad;
@@ -229,7 +229,7 @@ BUTTONS
   background-image: -o-linear-gradient(top, #1784c9, #1472ad);
   background-image: linear-gradient(to bottom, #1784c9, #1472ad);
 }
-/* line 253, C:/Projects/EASeton/Theme/library/scss/_mixins.scss */
+/* line 255, c:/Projects/EASeton/Theme/library/scss/_mixins.scss */
 .blue-button:active, .blue-button:visited:active {
   background-color: #1990db;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#1681c4), to(#1990db));
@@ -261,91 +261,91 @@ together, let's see how this works out. If you want to use 1140, the original
 values are commented out on each line.
 
 ******************************************************************/
-/* line 24, C:/Projects/EASeton/Theme/library/scss/_grid.scss */
+/* line 24, c:/Projects/EASeton/Theme/library/scss/_grid.scss */
 .onecol {
   width: 5.801104972%;
 }
 
 /* 4.85%;  } /* grid_1  */
-/* line 25, C:/Projects/EASeton/Theme/library/scss/_grid.scss */
+/* line 25, c:/Projects/EASeton/Theme/library/scss/_grid.scss */
 .twocol {
   width: 14.364640883%;
 }
 
 /* 13.45%; } /* grid_2  */
-/* line 26, C:/Projects/EASeton/Theme/library/scss/_grid.scss */
+/* line 26, c:/Projects/EASeton/Theme/library/scss/_grid.scss */
 .threecol {
   width: 22.928176794%;
 }
 
 /* 22.05%; } /* grid_3  */
-/* line 27, C:/Projects/EASeton/Theme/library/scss/_grid.scss */
+/* line 27, c:/Projects/EASeton/Theme/library/scss/_grid.scss */
 .fourcol {
   width: 31.491712705%;
 }
 
 /* 30.75%; } /* grid_4  */
-/* line 28, C:/Projects/EASeton/Theme/library/scss/_grid.scss */
+/* line 28, c:/Projects/EASeton/Theme/library/scss/_grid.scss */
 .fivecol {
   width: 40.055248616%;
 }
 
 /* 39.45%; } /* grid_5  */
-/* line 29, C:/Projects/EASeton/Theme/library/scss/_grid.scss */
+/* line 29, c:/Projects/EASeton/Theme/library/scss/_grid.scss */
 .sixcol {
   width: 48.618784527%;
 }
 
 /* 48%;    } /* grid_6  */
-/* line 30, C:/Projects/EASeton/Theme/library/scss/_grid.scss */
+/* line 30, c:/Projects/EASeton/Theme/library/scss/_grid.scss */
 .sevencol {
   width: 57.182320438000005%;
 }
 
 /* 56.75%; } /* grid_7  */
-/* line 31, C:/Projects/EASeton/Theme/library/scss/_grid.scss */
+/* line 31, c:/Projects/EASeton/Theme/library/scss/_grid.scss */
 .eightcol {
   width: 65.74585634900001%;
 }
 
 /* 65.4%;  } /* grid_8  */
-/* line 32, C:/Projects/EASeton/Theme/library/scss/_grid.scss */
+/* line 32, c:/Projects/EASeton/Theme/library/scss/_grid.scss */
 .ninecol {
   width: 74.30939226%;
 }
 
 /* 74.05%; } /* grid_9  */
-/* line 33, C:/Projects/EASeton/Theme/library/scss/_grid.scss */
+/* line 33, c:/Projects/EASeton/Theme/library/scss/_grid.scss */
 .tencol {
   width: 82.87292817100001%;
 }
 
 /* 82.7%;  } /* grid_10 */
-/* line 34, C:/Projects/EASeton/Theme/library/scss/_grid.scss */
+/* line 34, c:/Projects/EASeton/Theme/library/scss/_grid.scss */
 .elevencol {
   width: 91.436464082%;
 }
 
 /* 91.35%; } /* grid_11 */
-/* line 35, C:/Projects/EASeton/Theme/library/scss/_grid.scss */
+/* line 35, c:/Projects/EASeton/Theme/library/scss/_grid.scss */
 .twelvecol {
   width: 99.999999993%;
 }
 
 /* 100%;   } /* grid_12 */
-/* line 38, C:/Projects/EASeton/Theme/library/scss/_grid.scss */
+/* line 38, c:/Projects/EASeton/Theme/library/scss/_grid.scss */
 .onecol, .twocol, .threecol, .fourcol, .fivecol, .sixcol, .sevencol, .eightcol, .ninecol, .tencol, .elevencol, .twelvecol {
   position: relative;
   float: left;
   margin-left: 2.762430939%;
 }
 
-/* line 44, C:/Projects/EASeton/Theme/library/scss/_grid.scss */
+/* line 44, c:/Projects/EASeton/Theme/library/scss/_grid.scss */
 .first {
   margin-left: 0;
 }
 
-/* line 48, C:/Projects/EASeton/Theme/library/scss/_grid.scss */
+/* line 48, c:/Projects/EASeton/Theme/library/scss/_grid.scss */
 .last {
   float: right;
 }
@@ -370,23 +370,23 @@ upon your base.scss styles.
 NAVIGATION STYLES
 *********************/
 /* .menu is clearfixed inside mixins.scss */
-/* line 27, C:/Projects/EASeton/Theme/library/scss/_481up.scss */
+/* line 27, c:/Projects/EASeton/Theme/library/scss/_481up.scss */
 .menu {
   /* end .menu ul */
 }
-/* line 28, C:/Projects/EASeton/Theme/library/scss/_481up.scss */
+/* line 28, c:/Projects/EASeton/Theme/library/scss/_481up.scss */
 .menu ul {
   /* end .menu ul li */
   /* highlight current page */
   /* end current highlighters */
 }
-/* line 29, C:/Projects/EASeton/Theme/library/scss/_481up.scss */
+/* line 29, c:/Projects/EASeton/Theme/library/scss/_481up.scss */
 .menu ul li {
   /*
   plan your menus and drop-downs wisely.
   */
 }
-/* line 30, C:/Projects/EASeton/Theme/library/scss/_481up.scss */
+/* line 30, c:/Projects/EASeton/Theme/library/scss/_481up.scss */
 .menu ul li a {
   /*
   you can use hover styles here even though this size
@@ -399,23 +399,23 @@ NAVIGATION STYLES
 POSTS & CONTENT STYLES
 *********************/
 /* entry content */
-/* line 75, C:/Projects/EASeton/Theme/library/scss/_481up.scss */
+/* line 75, c:/Projects/EASeton/Theme/library/scss/_481up.scss */
 .entry-content {
   /* at this larger size, we can start to align images */
 }
-/* line 79, C:/Projects/EASeton/Theme/library/scss/_481up.scss */
+/* line 79, c:/Projects/EASeton/Theme/library/scss/_481up.scss */
 .entry-content .alignleft, .entry-content img.alignleft {
   margin-right: 1.5em;
   display: inline;
   float: left;
 }
-/* line 84, C:/Projects/EASeton/Theme/library/scss/_481up.scss */
+/* line 84, c:/Projects/EASeton/Theme/library/scss/_481up.scss */
 .entry-content .alignright, .entry-content img.alignright {
   margin-left: 1.5em;
   display: inline;
   float: right;
 }
-/* line 89, C:/Projects/EASeton/Theme/library/scss/_481up.scss */
+/* line 89, c:/Projects/EASeton/Theme/library/scss/_481up.scss */
 .entry-content .aligncenter, .entry-content img.aligncenter {
   margin-right: auto;
   margin-left: auto;
@@ -451,7 +451,7 @@ GENERAL STYLES
 /*********************
 LAYOUT & GRID STYLES
 *********************/
-/* line 26, C:/Projects/EASeton/Theme/library/scss/_768up.scss */
+/* line 26, c:/Projects/EASeton/Theme/library/scss/_768up.scss */
 .wrap {
   max-width: 960px;
 }
@@ -462,7 +462,7 @@ HEADER STYLES
 /*********************
 NAVIGATION STYLES
 *********************/
-/* line 40, C:/Projects/EASeton/Theme/library/scss/_768up.scss */
+/* line 40, c:/Projects/EASeton/Theme/library/scss/_768up.scss */
 .nav {
   border: 0;
   margin: 0;
@@ -471,7 +471,7 @@ NAVIGATION STYLES
   /* highlight current page */
   /* end current highlighters */
 }
-/* line 45, C:/Projects/EASeton/Theme/library/scss/_768up.scss */
+/* line 45, c:/Projects/EASeton/Theme/library/scss/_768up.scss */
 .nav li {
   background-color: #e7d683;
   color: #5f2b7b;
@@ -482,7 +482,7 @@ NAVIGATION STYLES
   */
   /* showing sub-menus */
 }
-/* line 52, C:/Projects/EASeton/Theme/library/scss/_768up.scss */
+/* line 52, c:/Projects/EASeton/Theme/library/scss/_768up.scss */
 .nav li a {
   font-size: 1.1em;
   font-weight: bold;
@@ -491,7 +491,7 @@ NAVIGATION STYLES
   has the possibility of being a mobile device.
   */
 }
-/* line 72, C:/Projects/EASeton/Theme/library/scss/_768up.scss */
+/* line 72, c:/Projects/EASeton/Theme/library/scss/_768up.scss */
 .nav li ul.sub-menu,
 .nav li ul.children {
   margin: 0;
@@ -502,7 +502,7 @@ NAVIGATION STYLES
   border: 1px solid #5f2b7b;
   /* highlight sub-menu current page */
 }
-/* line 80, C:/Projects/EASeton/Theme/library/scss/_768up.scss */
+/* line 80, c:/Projects/EASeton/Theme/library/scss/_768up.scss */
 .nav li ul.sub-menu li,
 .nav li ul.children li {
   background-color: #dfc858;
@@ -512,19 +512,19 @@ NAVIGATION STYLES
   for usability. k, bai.
   */
 }
-/* line 83, C:/Projects/EASeton/Theme/library/scss/_768up.scss */
+/* line 83, c:/Projects/EASeton/Theme/library/scss/_768up.scss */
 .nav li ul.sub-menu li a,
 .nav li ul.children li a {
   border-right: 0;
   display: block;
   width: 200px;
 }
-/* line 98, C:/Projects/EASeton/Theme/library/scss/_768up.scss */
+/* line 98, c:/Projects/EASeton/Theme/library/scss/_768up.scss */
 .nav li ul.sub-menu li:last-child a,
 .nav li ul.children li:last-child a {
   border-bottom: 0;
 }
-/* line 120, C:/Projects/EASeton/Theme/library/scss/_768up.scss */
+/* line 120, c:/Projects/EASeton/Theme/library/scss/_768up.scss */
 .nav li:hover ul {
   top: auto;
   display: block;
@@ -534,28 +534,28 @@ NAVIGATION STYLES
 /*********************
 SIDEBARS & ASIDES
 *********************/
-/* line 141, C:/Projects/EASeton/Theme/library/scss/_768up.scss */
+/* line 141, c:/Projects/EASeton/Theme/library/scss/_768up.scss */
 .sidebar {
   margin-top: 2.2em;
 }
 
-/* line 145, C:/Projects/EASeton/Theme/library/scss/_768up.scss */
+/* line 145, c:/Projects/EASeton/Theme/library/scss/_768up.scss */
 .widgettitle {
   border-bottom: 2px solid #444;
   margin-bottom: 0.75em;
 }
 
-/* line 150, C:/Projects/EASeton/Theme/library/scss/_768up.scss */
+/* line 150, c:/Projects/EASeton/Theme/library/scss/_768up.scss */
 .widget {
   padding: 0 10px;
   margin: 2.2em 0;
 }
-/* line 155, C:/Projects/EASeton/Theme/library/scss/_768up.scss */
+/* line 155, c:/Projects/EASeton/Theme/library/scss/_768up.scss */
 .widget ul li {
   margin-bottom: 0.75em;
   /* deep nesting */
 }
-/* line 163, C:/Projects/EASeton/Theme/library/scss/_768up.scss */
+/* line 163, c:/Projects/EASeton/Theme/library/scss/_768up.scss */
 .widget ul li ul {
   margin-top: 0.75em;
   padding-left: 1em;
@@ -575,71 +575,71 @@ SIDEBARS & ASIDES
 /*********************
 FOOTER STYLES
 *********************/
-/* line 264, C:/Projects/EASeton/Theme/library/scss/_768up.scss */
+/* line 264, c:/Projects/EASeton/Theme/library/scss/_768up.scss */
 #inner-footer {
   background-color: #6b80b0;
 }
 
-/* line 269, C:/Projects/EASeton/Theme/library/scss/_768up.scss */
+/* line 269, c:/Projects/EASeton/Theme/library/scss/_768up.scss */
 #homeNav .footer-nav, #pageNav .footer-nav {
   margin: 0;
 }
-/* line 272, C:/Projects/EASeton/Theme/library/scss/_768up.scss */
+/* line 272, c:/Projects/EASeton/Theme/library/scss/_768up.scss */
 #homeNav .footer-nav li, #pageNav .footer-nav li {
   float: left;
   margin: 10px 40px 0 60px;
 }
-/* line 276, C:/Projects/EASeton/Theme/library/scss/_768up.scss */
+/* line 276, c:/Projects/EASeton/Theme/library/scss/_768up.scss */
 #homeNav .footer-nav li a, #pageNav .footer-nav li a {
   font-size: 1.1em;
   font-weight: bold;
   text-decoration: none;
   margin-bottom: 5px;
 }
-/* line 282, C:/Projects/EASeton/Theme/library/scss/_768up.scss */
+/* line 282, c:/Projects/EASeton/Theme/library/scss/_768up.scss */
 #homeNav .footer-nav li a:hover, #pageNav .footer-nav li a:hover {
   color: antiquewhite;
 }
-/* line 288, C:/Projects/EASeton/Theme/library/scss/_768up.scss */
+/* line 288, c:/Projects/EASeton/Theme/library/scss/_768up.scss */
 #homeNav .footer-nav li ul.sub-menu, #pageNav .footer-nav li ul.sub-menu,
 #homeNav .footer-nav li ul.children,
 #pageNav .footer-nav li ul.children {
   display: block;
   margin-top: 5px;
 }
-/* line 292, C:/Projects/EASeton/Theme/library/scss/_768up.scss */
+/* line 292, c:/Projects/EASeton/Theme/library/scss/_768up.scss */
 #homeNav .footer-nav li ul.sub-menu li, #pageNav .footer-nav li ul.sub-menu li,
 #homeNav .footer-nav li ul.children li,
 #pageNav .footer-nav li ul.children li {
   float: none;
   margin: 0 0 0 5px;
 }
-/* line 296, C:/Projects/EASeton/Theme/library/scss/_768up.scss */
+/* line 296, c:/Projects/EASeton/Theme/library/scss/_768up.scss */
 #homeNav .footer-nav li ul.sub-menu li a, #pageNav .footer-nav li ul.sub-menu li a,
 #homeNav .footer-nav li ul.children li a,
 #pageNav .footer-nav li ul.children li a {
   font-size: .9em;
 }
 
-/* line 304, C:/Projects/EASeton/Theme/library/scss/_768up.scss */
+/* line 304, c:/Projects/EASeton/Theme/library/scss/_768up.scss */
 #homeNav {
   background-color: #b8a33d;
 }
-/* line 309, C:/Projects/EASeton/Theme/library/scss/_768up.scss */
+/* line 309, c:/Projects/EASeton/Theme/library/scss/_768up.scss */
 #homeNav li a {
   color: #666690;
 }
 
-/* line 315, C:/Projects/EASeton/Theme/library/scss/_768up.scss */
+/* line 315, c:/Projects/EASeton/Theme/library/scss/_768up.scss */
 #pageNav {
   border-top: 2px solid #6d4682;
 }
-/* line 320, C:/Projects/EASeton/Theme/library/scss/_768up.scss */
+/* line 320, c:/Projects/EASeton/Theme/library/scss/_768up.scss */
 #pageNav li a {
   color: #e7d683;
 }
 
-/* line 326, C:/Projects/EASeton/Theme/library/scss/_768up.scss */
+/* line 326, c:/Projects/EASeton/Theme/library/scss/_768up.scss */
 #bottomBanner {
   overflow: hidden;
   width: 100%;
@@ -649,27 +649,27 @@ FOOTER STYLES
   padding-top: 20px;
   padding-bottom: 20px;
 }
-/* line 335, C:/Projects/EASeton/Theme/library/scss/_768up.scss */
+/* line 335, c:/Projects/EASeton/Theme/library/scss/_768up.scss */
 #bottomBanner p {
   font-size: 1.1em;
   margin: 0 0 0 20px;
 }
-/* line 340, C:/Projects/EASeton/Theme/library/scss/_768up.scss */
+/* line 340, c:/Projects/EASeton/Theme/library/scss/_768up.scss */
 #bottomBanner .address {
   width: 450px;
   float: left;
 }
-/* line 345, C:/Projects/EASeton/Theme/library/scss/_768up.scss */
+/* line 345, c:/Projects/EASeton/Theme/library/scss/_768up.scss */
 #bottomBanner .images {
   width: 425px;
   float: right;
 }
-/* line 350, C:/Projects/EASeton/Theme/library/scss/_768up.scss */
+/* line 350, c:/Projects/EASeton/Theme/library/scss/_768up.scss */
 #bottomBanner img {
   margin-left: 30px;
 }
 
-/* line 355, C:/Projects/EASeton/Theme/library/scss/_768up.scss */
+/* line 355, c:/Projects/EASeton/Theme/library/scss/_768up.scss */
 #legal {
   clear: both;
   color: #b8a33d;
@@ -678,7 +678,7 @@ FOOTER STYLES
   width: 960px;
   margin: 0 auto;
 }
-/* line 363, C:/Projects/EASeton/Theme/library/scss/_768up.scss */
+/* line 363, c:/Projects/EASeton/Theme/library/scss/_768up.scss */
 #legal ul {
   padding: 0;
   list-style: none;
@@ -688,20 +688,20 @@ FOOTER STYLES
   margin-bottom: 20px;
   line-height: 1px;
 }
-/* line 372, C:/Projects/EASeton/Theme/library/scss/_768up.scss */
+/* line 372, c:/Projects/EASeton/Theme/library/scss/_768up.scss */
 #legal ul li:first-child {
   border-left: none;
   padding-left: 0px;
   margin-left: 0px;
 }
-/* line 378, C:/Projects/EASeton/Theme/library/scss/_768up.scss */
+/* line 378, c:/Projects/EASeton/Theme/library/scss/_768up.scss */
 #legal ul li {
   float: left;
   border-left: 1px solid;
   padding-left: 10px;
   margin-left: 10px;
 }
-/* line 384, C:/Projects/EASeton/Theme/library/scss/_768up.scss */
+/* line 384, c:/Projects/EASeton/Theme/library/scss/_768up.scss */
 #legal ul li a {
   text-decoration: none;
 }

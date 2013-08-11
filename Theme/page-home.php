@@ -35,7 +35,7 @@ Template Name: Home Page
                 <div class="first fourcol actionSection">
                     <h1 class="mainheading">Get Help</h1>
                     <p>If you are a pregnant or parenting mother...</p>
-                    <a href="<?php echo get_permalink(9); ?>" title="Get Help">See What We Offer -></a>
+                    <a href="<?php echo get_permalink(103); ?>" title="Get Help">See What We Offer -></a>
                 </div>
 
                 <div class="fourcol actionSection">

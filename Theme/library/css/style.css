@@ -1020,8 +1020,7 @@ HOMEPAGE STYLES
 
 /* line 250, c:/Projects/EASeton/Theme/library/scss/_base.scss */
 #logo {
-  position: absolute;
-  z-index: 10;
+  height: 72px;
 }
 
 /* line 255, c:/Projects/EASeton/Theme/library/scss/_base.scss */
@@ -1357,15 +1356,6 @@ POSTS & CONTENT STYLES
 }
 
 /* entry content */
-/* line 596, c:/Projects/EASeton/Theme/library/scss/_base.scss */
-.entry-content {
-  /*
-  image alignment on a screen this size may be
-  a bit difficult. It's set to start aligning
-  and floating images at the next breakpoint,
-  but it's up to you. Feel free to change it up.
-  */
-}
 /* line 631, c:/Projects/EASeton/Theme/library/scss/_base.scss */
 .entry-content dd {
   margin-left: 0;
@@ -1374,17 +1364,46 @@ POSTS & CONTENT STYLES
   margin-bottom: 1.5em;
 }
 /* line 638, c:/Projects/EASeton/Theme/library/scss/_base.scss */
+.entry-content img.alignright {
+  float: right;
+  margin: 10px;
+}
+/* line 643, c:/Projects/EASeton/Theme/library/scss/_base.scss */
+.entry-content img.alignleft {
+  float: left;
+  margin: 20px;
+}
+/* line 648, c:/Projects/EASeton/Theme/library/scss/_base.scss */
+.entry-content img.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 654, c:/Projects/EASeton/Theme/library/scss/_base.scss */
+.entry-content .alignright {
+  float: right;
+}
+/* line 658, c:/Projects/EASeton/Theme/library/scss/_base.scss */
+.entry-content .alignleft {
+  float: left;
+}
+/* line 662, c:/Projects/EASeton/Theme/library/scss/_base.scss */
+.entry-content .aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 668, c:/Projects/EASeton/Theme/library/scss/_base.scss */
 .entry-content img {
-  margin: 0 0 1.5em 0;
   max-width: 100%;
   height: auto;
 }
-/* line 654, c:/Projects/EASeton/Theme/library/scss/_base.scss */
+/* line 673, c:/Projects/EASeton/Theme/library/scss/_base.scss */
 .entry-content video, .entry-content object {
   max-width: 100%;
   height: auto;
 }
-/* line 659, c:/Projects/EASeton/Theme/library/scss/_base.scss */
+/* line 678, c:/Projects/EASeton/Theme/library/scss/_base.scss */
 .entry-content pre {
   background: #eee;
   border: 1px solid #cecece;
@@ -1392,20 +1411,20 @@ POSTS & CONTENT STYLES
 }
 
 /* end .entry-content */
-/* line 667, c:/Projects/EASeton/Theme/library/scss/_base.scss */
+/* line 686, c:/Projects/EASeton/Theme/library/scss/_base.scss */
 .wp-caption {
   max-width: 100%;
   background: #eee;
   padding: 5px;
+  margin: 10px;
   /* images inside wp-caption */
 }
-/* line 673, c:/Projects/EASeton/Theme/library/scss/_base.scss */
+/* line 693, c:/Projects/EASeton/Theme/library/scss/_base.scss */
 .wp-caption img {
   max-width: 100%;
-  margin-bottom: 0;
   width: 100%;
 }
-/* line 679, c:/Projects/EASeton/Theme/library/scss/_base.scss */
+/* line 698, c:/Projects/EASeton/Theme/library/scss/_base.scss */
 .wp-caption p.wp-caption-text {
   font-size: 0.85em;
   margin: 4px 0 7px;
@@ -1419,13 +1438,13 @@ POSTS & CONTENT STYLES
 /******************************************************************
 PAGE NAVI STYLES
 ******************************************************************/
-/* line 717, c:/Projects/EASeton/Theme/library/scss/_base.scss */
+/* line 736, c:/Projects/EASeton/Theme/library/scss/_base.scss */
 .page-navigation,
 .wp-prev-next {
   margin: 1.1em 0 2.2em;
 }
 
-/* line 720, c:/Projects/EASeton/Theme/library/scss/_base.scss */
+/* line 739, c:/Projects/EASeton/Theme/library/scss/_base.scss */
 .bones_page_navi {
   /* current page link */
   /* end .bones_page_navi .bpn-current */
@@ -1436,44 +1455,44 @@ PAGE NAVI STYLES
   /* first page link */
   /* last page link */
 }
-/* line 722, c:/Projects/EASeton/Theme/library/scss/_base.scss */
+/* line 741, c:/Projects/EASeton/Theme/library/scss/_base.scss */
 .bones_page_navi li {
   float: left;
   margin-left: 10px;
 }
-/* line 726, c:/Projects/EASeton/Theme/library/scss/_base.scss */
+/* line 745, c:/Projects/EASeton/Theme/library/scss/_base.scss */
 .bones_page_navi li a {
   padding: 3px 6px;
   display: block;
   text-decoration: none;
   position: relative;
 }
-/* line 733, c:/Projects/EASeton/Theme/library/scss/_base.scss */
+/* line 752, c:/Projects/EASeton/Theme/library/scss/_base.scss */
 .bones_page_navi li a:hover, .bones_page_navi li a:focus {
   color: #f01d4f;
   text-decoration: underline;
 }
-/* line 742, c:/Projects/EASeton/Theme/library/scss/_base.scss */
+/* line 761, c:/Projects/EASeton/Theme/library/scss/_base.scss */
 .bones_page_navi li.bpn-current {
   padding: 3px 6px;
   border-bottom: 2px solid #f01d4f;
   position: relative;
 }
-/* line 747, c:/Projects/EASeton/Theme/library/scss/_base.scss */
+/* line 766, c:/Projects/EASeton/Theme/library/scss/_base.scss */
 .bones_page_navi li.bpn-current a {
   /* hovering on current page link */
 }
-/* line 758, c:/Projects/EASeton/Theme/library/scss/_base.scss */
+/* line 777, c:/Projects/EASeton/Theme/library/scss/_base.scss */
 .bones_page_navi li.bpn-prev-link,
 .bones_page_navi li.bpn-next-link {
   font-weight: 700;
 }
-/* line 761, c:/Projects/EASeton/Theme/library/scss/_base.scss */
+/* line 780, c:/Projects/EASeton/Theme/library/scss/_base.scss */
 .bones_page_navi li.bpn-prev-link a,
 .bones_page_navi li.bpn-next-link a {
   padding: 0;
 }
-/* line 770, c:/Projects/EASeton/Theme/library/scss/_base.scss */
+/* line 789, c:/Projects/EASeton/Theme/library/scss/_base.scss */
 .bones_page_navi li.bpn-prev-link a:hover,
 .bones_page_navi li.bpn-next-link a:hover,
 .bones_page_navi li.bpn-first-page-link a:hover,
@@ -1483,11 +1502,11 @@ PAGE NAVI STYLES
 
 /* end .bones_page_navi */
 /* fallback previous & next links */
-/* line 813, c:/Projects/EASeton/Theme/library/scss/_base.scss */
+/* line 832, c:/Projects/EASeton/Theme/library/scss/_base.scss */
 .wp-prev-next .prev-link {
   float: left;
 }
-/* line 817, c:/Projects/EASeton/Theme/library/scss/_base.scss */
+/* line 836, c:/Projects/EASeton/Theme/library/scss/_base.scss */
 .wp-prev-next .next-link {
   float: right;
 }
@@ -1497,12 +1516,12 @@ PAGE NAVI STYLES
 COMMENT STYLES
 ******************************************************************/
 /* h3 comment title */
-/* line 828, c:/Projects/EASeton/Theme/library/scss/_base.scss */
+/* line 847, c:/Projects/EASeton/Theme/library/scss/_base.scss */
 #comments {
   /* number of comments span */
 }
 
-/* line 845, c:/Projects/EASeton/Theme/library/scss/_base.scss */
+/* line 864, c:/Projects/EASeton/Theme/library/scss/_base.scss */
 .commentlist {
   /* general comment classes */
   /* vcard */
@@ -1513,7 +1532,7 @@ COMMENT STYLES
   /* comment reply link */
   /* end .commentlist .comment-reply-link */
 }
-/* line 847, c:/Projects/EASeton/Theme/library/scss/_base.scss */
+/* line 866, c:/Projects/EASeton/Theme/library/scss/_base.scss */
 .commentlist li {
   position: relative;
   clear: both;
@@ -1523,63 +1542,63 @@ COMMENT STYLES
   padding: 0.7335em 10px;
   /* end .commentlist li ul.children */
 }
-/* line 855, c:/Projects/EASeton/Theme/library/scss/_base.scss */
+/* line 874, c:/Projects/EASeton/Theme/library/scss/_base.scss */
 .commentlist li:last-child {
   margin-bottom: 0;
 }
-/* line 859, c:/Projects/EASeton/Theme/library/scss/_base.scss */
+/* line 878, c:/Projects/EASeton/Theme/library/scss/_base.scss */
 .commentlist li ul.children {
   margin: 0;
   /* variations */
   /* change number for different depth */
 }
-/* line 877, c:/Projects/EASeton/Theme/library/scss/_base.scss */
+/* line 896, c:/Projects/EASeton/Theme/library/scss/_base.scss */
 .commentlist li[class*=depth-] {
   margin-top: 1.1em;
 }
-/* line 881, c:/Projects/EASeton/Theme/library/scss/_base.scss */
+/* line 900, c:/Projects/EASeton/Theme/library/scss/_base.scss */
 .commentlist li.depth-1 {
   margin-left: 0;
   margin-top: 0;
 }
-/* line 886, c:/Projects/EASeton/Theme/library/scss/_base.scss */
+/* line 905, c:/Projects/EASeton/Theme/library/scss/_base.scss */
 .commentlist li:not(.depth-1) {
   margin-right: -10px;
   margin-left: -10px;
   margin-top: 0;
   padding-bottom: 0;
 }
-/* line 900, c:/Projects/EASeton/Theme/library/scss/_base.scss */
+/* line 919, c:/Projects/EASeton/Theme/library/scss/_base.scss */
 .commentlist .odd {
   background: #eee;
 }
-/* line 903, c:/Projects/EASeton/Theme/library/scss/_base.scss */
+/* line 922, c:/Projects/EASeton/Theme/library/scss/_base.scss */
 .commentlist .even {
   background: #fefefe;
 }
-/* line 918, c:/Projects/EASeton/Theme/library/scss/_base.scss */
+/* line 937, c:/Projects/EASeton/Theme/library/scss/_base.scss */
 .commentlist .vcard {
   margin-left: 50px;
 }
-/* line 921, c:/Projects/EASeton/Theme/library/scss/_base.scss */
+/* line 940, c:/Projects/EASeton/Theme/library/scss/_base.scss */
 .commentlist .vcard cite.fn {
   font-weight: 700;
   font-style: normal;
 }
-/* line 929, c:/Projects/EASeton/Theme/library/scss/_base.scss */
+/* line 948, c:/Projects/EASeton/Theme/library/scss/_base.scss */
 .commentlist .vcard time {
   float: right;
 }
-/* line 932, c:/Projects/EASeton/Theme/library/scss/_base.scss */
+/* line 951, c:/Projects/EASeton/Theme/library/scss/_base.scss */
 .commentlist .vcard time a {
   color: #999;
   text-decoration: none;
 }
-/* line 936, c:/Projects/EASeton/Theme/library/scss/_base.scss */
+/* line 955, c:/Projects/EASeton/Theme/library/scss/_base.scss */
 .commentlist .vcard time a:hover {
   text-decoration: underline;
 }
-/* line 946, c:/Projects/EASeton/Theme/library/scss/_base.scss */
+/* line 965, c:/Projects/EASeton/Theme/library/scss/_base.scss */
 .commentlist .vcard img.avatar {
   position: absolute;
   left: 10px;
@@ -1587,17 +1606,17 @@ COMMENT STYLES
   border: 1px solid #cecece;
   background: #fff;
 }
-/* line 971, c:/Projects/EASeton/Theme/library/scss/_base.scss */
+/* line 990, c:/Projects/EASeton/Theme/library/scss/_base.scss */
 .commentlist .comment_content {
   margin-left: 50px;
 }
-/* line 974, c:/Projects/EASeton/Theme/library/scss/_base.scss */
+/* line 993, c:/Projects/EASeton/Theme/library/scss/_base.scss */
 .commentlist .comment_content p {
   margin: 0.7335em 0 1.5em;
   font-size: 1em;
   line-height: 1.5em;
 }
-/* line 983, c:/Projects/EASeton/Theme/library/scss/_base.scss */
+/* line 1002, c:/Projects/EASeton/Theme/library/scss/_base.scss */
 .commentlist .comment-reply-link {
   text-decoration: none;
   float: right;
@@ -1609,7 +1628,7 @@ COMMENT STYLES
   font-weight: 700;
   font-size: 0.9em;
 }
-/* line 995, c:/Projects/EASeton/Theme/library/scss/_base.scss */
+/* line 1014, c:/Projects/EASeton/Theme/library/scss/_base.scss */
 .commentlist .comment-reply-link:hover, .commentlist .comment-reply-link:focus {
   opacity: 1;
 }
@@ -1618,27 +1637,27 @@ COMMENT STYLES
 /******************************************************************
 COMMENT FORM STYLES
 ******************************************************************/
-/* line 1007, c:/Projects/EASeton/Theme/library/scss/_base.scss */
+/* line 1026, c:/Projects/EASeton/Theme/library/scss/_base.scss */
 .respond-form {
   margin: 1.5em 10px;
   padding-bottom: 2.2em;
 }
-/* line 1011, c:/Projects/EASeton/Theme/library/scss/_base.scss */
+/* line 1030, c:/Projects/EASeton/Theme/library/scss/_base.scss */
 .respond-form form {
   margin: 0.75em 0;
 }
-/* line 1014, c:/Projects/EASeton/Theme/library/scss/_base.scss */
+/* line 1033, c:/Projects/EASeton/Theme/library/scss/_base.scss */
 .respond-form form li {
   list-style-type: none;
   clear: both;
   margin-bottom: 0.7335em;
 }
-/* line 1020, c:/Projects/EASeton/Theme/library/scss/_base.scss */
+/* line 1039, c:/Projects/EASeton/Theme/library/scss/_base.scss */
 .respond-form form li label,
 .respond-form form li small {
   display: none;
 }
-/* line 1028, c:/Projects/EASeton/Theme/library/scss/_base.scss */
+/* line 1047, c:/Projects/EASeton/Theme/library/scss/_base.scss */
 .respond-form form input[type=text],
 .respond-form form input[type=email],
 .respond-form form input[type=url],
@@ -1649,14 +1668,14 @@ COMMENT FORM STYLES
   line-height: 1.5em;
   /* form validation */
 }
-/* line 1034, c:/Projects/EASeton/Theme/library/scss/_base.scss */
+/* line 1053, c:/Projects/EASeton/Theme/library/scss/_base.scss */
 .respond-form form input[type=text]:focus,
 .respond-form form input[type=email]:focus,
 .respond-form form input[type=url]:focus,
 .respond-form form textarea:focus {
   background: #fff;
 }
-/* line 1039, c:/Projects/EASeton/Theme/library/scss/_base.scss */
+/* line 1058, c:/Projects/EASeton/Theme/library/scss/_base.scss */
 .respond-form form input[type=text]:invalid,
 .respond-form form input[type=email]:invalid,
 .respond-form form input[type=url]:invalid,
@@ -1669,14 +1688,14 @@ COMMENT FORM STYLES
   -ms-box-shadow: none;
   box-shadow: none;
 }
-/* line 1052, c:/Projects/EASeton/Theme/library/scss/_base.scss */
+/* line 1071, c:/Projects/EASeton/Theme/library/scss/_base.scss */
 .respond-form form input[type=text],
 .respond-form form input[type=email],
 .respond-form form input[type=url] {
   max-width: 400px;
   min-width: 250px;
 }
-/* line 1057, c:/Projects/EASeton/Theme/library/scss/_base.scss */
+/* line 1076, c:/Projects/EASeton/Theme/library/scss/_base.scss */
 .respond-form form textarea {
   resize: none;
   width: 97.3%;
@@ -1685,7 +1704,7 @@ COMMENT FORM STYLES
 
 /* comment submit button */
 /* comment form title */
-/* line 1070, c:/Projects/EASeton/Theme/library/scss/_base.scss */
+/* line 1089, c:/Projects/EASeton/Theme/library/scss/_base.scss */
 #comment-form-title {
   margin: 0 0 1.1em;
 }
@@ -1693,13 +1712,13 @@ COMMENT FORM STYLES
 /* cancel comment reply link */
 /* logged in comments */
 /* allowed tags */
-/* line 1083, c:/Projects/EASeton/Theme/library/scss/_base.scss */
+/* line 1102, c:/Projects/EASeton/Theme/library/scss/_base.scss */
 #allowed_tags {
   margin: 1.5em 10px 0.7335em 0;
 }
 
 /* no comments */
-/* line 1088, c:/Projects/EASeton/Theme/library/scss/_base.scss */
+/* line 1107, c:/Projects/EASeton/Theme/library/scss/_base.scss */
 .nocomments {
   margin: 0 20px 1.1em;
 }
@@ -1707,7 +1726,7 @@ COMMENT FORM STYLES
 /*********************
 SIDEBARS & ASIDES
 *********************/
-/* line 1104, c:/Projects/EASeton/Theme/library/scss/_base.scss */
+/* line 1123, c:/Projects/EASeton/Theme/library/scss/_base.scss */
 .widget ul li {
   /* deep nesting */
 }

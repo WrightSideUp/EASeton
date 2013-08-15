@@ -46,22 +46,19 @@
 
 				<div id="inner-header" class="wrap clearfix">
 
+                    <div id="logo">
+
+                            <?php if ( is_front_page() ) : ?>
+                                <img src=" <?php echo get_template_directory_uri(); ?>/img/MarkHorizontalLarge.png" alt="Elizabeth Ann Seton Program Logo" />
+                            <?php else : ?>
+                                <img src=" <?php echo get_template_directory_uri(); ?>/img/mark horizontal.png" alt="Elizabeth Ann Seton Program Logo" />
+                            <?php endif; ?>
+                    </div>
+
 					<div id="header-bar">
-
-                        <div id="logo">
-                            <a href="<?php echo home_url(); ?>" rel="nofollow">
-                                <?php if ( is_front_page() ) : ?>
-                                    <img src=" <?php echo get_template_directory_uri(); ?>/img/mark.png" alt="Elizabeth Ann Seton Program Logo" />
-                                <?php else : ?>
-                                    <img src=" <?php echo get_template_directory_uri(); ?>/img/mark horizontal.png" alt="Elizabeth Ann Seton Program Logo" />
-                                <?php endif; ?>
-                            </a>
-                        </div>
-
                         <nav role="navigation">
                             <?php bones_main_nav(); ?>
                         </nav>
-
                     </div> <!-- end header-bar -->
 
 				</div> <!-- end #inner-header -->
